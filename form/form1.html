@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+
+<body>
+    <!-- elemen -elemen form 
+    iput, textarea, select, button, label -->
+    <form action="">
+        <!-- label untuk elemen dibawahnya yaitu input  -->
+        <!-- kelebihan label adalah ketika di klik mengaktifkan text field nya  -->
+        <label for="username">Username : </label>
+        <!-- for harus sama dengan id  -->
+        <input type="text" name="username" id="username"><br><br>
+        <!-- ingat for di label harus sama dengan id di input  -->
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password"><br><br>
+
+        <!-- ingat radio button name harus sama biar hanya bisa dipilih salah satu  -->
+        <input type="radio" name="gender" id="male"><label for="male">Male</label>
+        <input type="radio" name="gender" id="female"><label for="female">Female</label>
+        <br><br>
+
+        <!-- kalo mau milih lebih dari satu jangan gunakan radio button tapi gunakan checkbox  -->
+        <input type="checkbox" id="sing"><label for="sing">Menyanyi</label><br>
+        <input type="checkbox" id="olahraga"><label for="olahraga">Olahraga</label><br>
+        <input type="checkbox" id="ngoding"><label for="ngoding">Ngoding</label>
+        <br><br>
+
+        <!-- ini bagian textarea  -->
+        <textarea name="coment" id="coment" cols="30" rows="10">silahkann isi di sini woyyy</textarea>
+        <br><br>
+
+        <!-- ini bagian dropdown  -->
+        <select name="domisili" id="domisili">
+            <option value="bandung">bandung</option>
+            <option value="majalengka">majalengka</option>
+            <option value="jakarta">jakarta</option>
+            <option value="sumedang">sumedang</option>
+        </select>
+        <br><br>
+        <!-- untuk button ada 3 submit, button dan reset  -->
+        <!-- bikin button jangan pake input  -->
+        <!-- <input type="submit" value="Kirim"> -->
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+
+</html>
